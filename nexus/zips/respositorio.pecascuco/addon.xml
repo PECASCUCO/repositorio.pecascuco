@@ -6,10 +6,10 @@
             <checksum>https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/repo/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/repo/zips/</datadir>
         </dir>
-        <dir minversion="19.0.0">
-    <info compressed="false">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/matrix/zips/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/matrix/zips/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/matrix/zips/</datadir>
+        <dir minversion="20.0.0">
+    <info compressed="false">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/nexus/zips/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/nexus/zips/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/nexus/zips/</datadir>
 </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
