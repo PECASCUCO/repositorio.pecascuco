@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.alfa" name="Alfa" version="3.8.5" provider-name="Alfa Addon">
+	<requires>
+		<import addon="script.module.requests"></import>
+		<import addon="script.module.beautifulsoup4" version="4.5.3"></import>
+		<import addon="script.module.html5lib" version="0.999.0"></import>
+		<import addon="script.alfa-update-helper" optional="true"></import>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="ca">Navega amb Kodi per pàgines web.</summary>
+		<summary lang="en">Browse web pages using Kodi</summary>
+		<summary lang="es">Navega con Kodi por páginas web.</summary>
+		<summary lang="it">Sfoglia le pagine web con Kodi.</summary>
+		<summary lang="pt">Navegue por páginas da web com Kodi.</summary>
+		<description lang="ca">Navega amb Kodi per pàgines web per veure els vídeos de manera fàcil.</description>
+		<description lang="en">Browse web pages using Kodi to easily watch their video content.</description>
+		<description lang="es">Navega con Kodi por páginas web para ver sus videos de manera fácil.</description>
+		<description lang="it">Sfoglia le pagine web con Kodi per guardare facilmente i tuoi video.</description>
+		<description lang="pt">Navegue pelas páginas da web com Kodi para assistir seus vídeos facilmente.</description>
+		<disclaimer lang="ca">[COLOR red]Els propietaris i distribuïdors d'aquest complemento no proveeixen ni distribueixen cap contingut mostrat pel complemento ni tenen affiliación alguna amb els proveïdors de l'contingut.[/COLOR]</disclaimer>
+		<disclaimer lang="en">[COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
+		<disclaimer lang="es">[COLOR red]Los propietarios y distribuidores de este addon no proveen ni distribuyen ningún contenido mostrado por el addon ni tienen affiliación alguna con los proveedores del contenido.[/COLOR]</disclaimer>
+		<disclaimer lang="it">[COLOR red]I proprietari e i distributori di questo addon aggiuntivo non forniscono o distribuiscono alcun contenuto visualizzato dal addon aggiuntivo né hanno alcuna affiliazione con i fornitori di contenuti.[/COLOR]</disclaimer>
+		<disclaimer lang="pt">[COLOR red]Os proprietários e distribuidores deste addon não fornecem ou distribuem qualquer conteúdo exibido pelo addon nem têm qualquer afiliação com os provedores de conteúdo.[/COLOR]</disclaimer>
+		<platform>all</platform>
+		<license>GNU GPL v3</license>
+		<source>https://github.com/alfa-addon/addon</source>
+		<news>[B]Estos son los cambios para esta versión:[/B]
+
+      [COLOR green][B]Arreglos[/B][/COLOR]
+      ¤ Cuevana3                          ¤ Dilo                             ¤ Dontorrent
+      ¤ Hdfull                                ¤ Magnetpelis               ¤ Newpct1
+      ¤ Seriesmetro                     ¤ Sololatino                    ¤ Zonaleros
+      ¤ +18
+
+      [COLOR green][B]Novedades[/B][/COLOR]</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/media/screenshots/1.jpg</screenshot>
+			<screenshot>resources/media/screenshots/2.jpg</screenshot>
+			<screenshot>resources/media/screenshots/3.jpg</screenshot>
+			<screenshot>resources/media/screenshots/4.jpg</screenshot>
+		</assets>
+	</extension>
+	<extension point="xbmc.service" library="videolibrary_service.py" start="login|startup"></extension>
+</addon>
+
+<addon id="plugin.video.balandro" name="Balandro" version="2.5.6" provider-name="Balandro Team">
+  <requires>
+     <import addon="script.module.requests"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Balandro es un Navegador de páginas Webs</summary>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]2.5.6[/COLOR][COLOR red]  Enero 2023[/B][/COLOR]
+
+    [COLOR goldenrod][B]Media Centers Soportados[/COLOR][COLOR plum]  20.x,  19.x,  18.x  y  17.x[/B][/COLOR]
+
+    [COLOR springgreen][B]Fuente:[/COLOR]  [COLOR cyan]balandro-tk.github.io/balandro/[/B][/COLOR]
+
+    [COLOR limegreen][B]Contacto:[/B][/COLOR]
+        Foro  mimediacenter.info/foro/
+        Telegram  t.me/@balandro_asesor
+
+    [COLOR blue][B]Agradecimientos:[/B][/COLOR]
+        Cita destacada a los miembros de Balandro Team
+        Mención especial al grupo de Balandro Checkers
+
+    [COLOR cyan][B]Canales:[/B][/COLOR]
+        Revisión Generalizada
+        Nuevos - Sin novedades
+        Anulados - Las webs cerradas
+
+    [COLOR springgreen][B]Servidores:[/B][/COLOR]
+        Revisión Generalizada
+        Nuevos - Sin novedades
+        Anulados - Las webs cerradas
+    </news>
+    <summary>Balandro es un navegador de páginas webs</summary>
+    <description>[COLOR yellow][B]Balandro es desde el año [COLOR cyan]2018[COLOR yellow] un MOD derivado de Pelisalacarta y Alfa,[COLOR mediumaquamarine] y tiene como objeto, permitir visualizar Películas, Series y Documentales, todo a través de Internet y directamente desde su sistema Media Center. [COLOR orchid]Este Add-On es tan solo un mero Ejercicio de Aprendizaje del Lenguaje de Programación Python y se distribuye sin Ningún Contenido Multimedia adjunto al mismo [COLOR lightgrey][I]En consecuencia solo las Webs son Plenamente Responsables de los contenidos que publiquen.[/I][/B][/COLOR]</description>
+    <disclaimer>[COLOR tan][B]Está Prohibida su distribución, solo ó junto con Contenidos Multimedia Protegidos por los Derechos de Autor. [COLOR chocolate]Si este tipo de contenido está Prohibido en su País, solamente Usted será el Responsable de su uso. [COLOR white]La vulneración de estas prohibiciones Exonerarán de cualquier Culpa a sus Autores, [COLOR red]Siendo el unico Responsable quien lo haya Distribuido ó Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <source>https://balandro-tk.github.io/balandro/</source>
+    <forum>https://www.mimediacenter.info/foro/</forum>
+  </extension>
+
+  <extension point="xbmc.service" library="services.py" start="login|startup"/>
+</addon>
+
+<addon id="plugin.video.cristalazul" name="[B][/B][COLOR aqua]CRISTAL AZUL 3.0.6[/COLOR]" version="3.0.6" provider-name="PICAPAU, LOURDES, SUPERTOPO, LUISMA, GEORGE">
+    <requires>
+        <import addon="script.module.simplecache"/>
+        <import addon="script.module.six"/>
+        <import addon="script.module.kodi-six"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.youtube.dl" optional="true" />
+        <import addon="plugin.video.youtube" />
+		<import addon="plugin.video.duffyou" optional="true" />
+        <import addon="script.module.dateutil" optional="true" />
+        <import addon="script.module.resolveurl" optional="true" />
+        <import addon="script.module.cloudscraper" optional="true" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.pycryptodome" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="autoexec.py" start="autoexec" />
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+
+        <dir>
+            <info>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+        </dir>
+
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>creado por picapau, lourdes, supertopo y luisma</summary>
+        <description>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE FACILITA EL ACESSO A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS
+        </description>
+		<disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.gif</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.duffyou" name="Duff You" version="0.2.1" provider-name="La Taberna">
+    <requires>
+        <import addon="script.module.six" version="1.11.0" />
+        <import addon="script.module.simplecache" />
+        <import addon="script.module.inputstreamhelper" version="0.5.0" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
+        <provides>video</provides>
+    </extension>
+	<extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <description>Hasta las narices de las apikeys de YouTube? Y de ver como calidad máxima los videos de la plataforma solo hasta 720p?[CR]Pues se acabó! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningún tipo de restricción para ver los videos a la máxima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
+        <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <license>[B]Este es un software gratuito[/B]</license>
+        <news>- Añadida opción de reproducción externa de playlists[CR]- Correcciones menores
+        </news>
+    </extension>
+</addon>
+
+<addon
+	id="plugin.video.koditv" version="3" name="[B][COLOR white]kodi[COLOR aqua]tv[/COLOR][/B]" provider-name="equipo tvchopo">
+<requires>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.six" />
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+
+	 <extension point="xbmc.addon.repository" name="tvchopo">
+        <info>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/</datadir>
+    </extension>
+
+
+	<extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+		<summary lang="en"></summary>
+		<summary lang="da"></summary>
+		<description lang="en"></description>
+		<website></website>
+		<license>GPL 2.0</license>
+		<platform>all</platform>
+<assets>
+        <icon>icon.jpg</icon>
+  <screenshot>resources/screenshots/screenshot1.jpg</screenshot>
+  <screenshot>resources/screenshots/screenshot2.jpg</screenshot>
+  <screenshot>resources/screenshots/screenshot3.jpg</screenshot>
+  <screenshot>resources/screenshots/screenshot4.jpg</screenshot>
+  <screenshot>resources/screenshots/screenshot5.jpg</screenshot>
+        <fanart>fanart.png</fanart>
+    </assets>
+		<language>es</language>
+	</extension>
+</addon>
+
+<addon id="plugin.video.moestv" name="Moe's TV" version="0.2.1" provider-name="La Taberna">
+  <requires>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.simplecache"/>
+    <import addon="script.module.inputstreamhelper" version="0.5.0"/>
+    <import addon="plugin.video.duffyou" version="0.1.2"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Televisión a la carta y en directo.[CR]Algunos de los enlaces de la sección 'En Directo' provienen de las listas publicadas en https://www.tdtchannels.com/ </summary>
+    <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.jpg</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <license>[B]Este es un software gratuito[/B]</license>
+    <news> - Versión 0.1.3:
+      * Mostrar vistos en skin embuary
+      [CR]- Versión 0.1.2:
+      * Reparado fix en multi-bitrate
+      [CR]- Versión 0.1.1:
+      * Reparado fix MPD en Atresplayer
+      * Uso de Duff You para resolver enlaces de youtube
+      * Mejoras en la actualización de canales
+      [CR]- Version 0.0.9:
+      * Nuevos canales
+      * Cambios en el orden de los canales
+      * Permitir descargas en la mayoria de los canales.
+      * Canal Mitele: Reparar Geolocalizacion de IPs en windows 10 y kodi 19
+      * Mejora en la actualización de canales
+      * Otras reparaciones menores
+      [CR]- Versión inicial 0.0.7
+    </news>
+  </extension>
+</addon>
+
+<addon id="plugin.video.palantir2" name="[COLOR gold]Palantir 2[/COLOR]" version="2.3.3" provider-name="TierraMedia">
+  <requires>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="plugin.video.duffyou" version="0.1.3" optional="true"/>
+    <import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+    <import addon="script.module.inputstreamhelper" version="0.5.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.embuary.info"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <description>Visualiza el contenido de la nube, series, películas.[CR][COLOR red]Todo el contenido disponible en este Addon esta sacado de servidores gratuitos, disponible en la red para todos los usuarios.[/COLOR]</description>
+    <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.gif</fanart>
+        <screenshot>resources/media/Captura1.png</screenshot>
+        <screenshot>resources/media/Captura2.png</screenshot>
+        <screenshot>resources/media/Captura3.png</screenshot>
+        <screenshot>resources/media/Captura4.png</screenshot>
+    </assets>
+    <news></news>
+    <forum>https://t.me/addon_palantir</forum>
+  </extension>
+</addon>
+
+<addon id="respositorio.pecascuco" name="REPOSITORIO PECASCUCO" version="1.0" provider-name="PECASCUCO">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/repo/zips/</datadir>
+        </dir>
+        <dir minversion="19.0.0">
+    <info compressed="false">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/matrix/zips/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/matrix/zips/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/PECASCUCO/repositorio.pecascuco/master/matrix/zips/</datadir>
+</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>REPOSITORIO PECASCUCO</summary>
+        <description>REPOSITORIO</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
